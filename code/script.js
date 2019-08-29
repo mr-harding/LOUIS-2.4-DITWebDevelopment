@@ -8,25 +8,11 @@ var x;
 Http.onreadystatechange = (e) => {
   x = JSON.parse(Http.responseText);
 
-  // D-house
-  document.getElementById("d-point").innerHTML = x.values[0][1];
-  document.getElementById("d-upcomming").innerHTML = x.values[0][2];
-
-  // A-house
-  document.getElementById("a-point").innerHTML = x.values[1][1];
-  document.getElementById("a-upcomming").innerHTML = x.values[1][2];
-
-  // H-house
-  document.getElementById("h-point").innerHTML = x.values[2][1];
-  document.getElementById("h-upcomming").innerHTML = x.values[2][2]
-
-  // M-house
-  document.getElementById("m-point").innerHTML = x.values[3][1];
-  document.getElementById("m-upcomming").innerHTML = x.values[3][2]
-
-  // F-hosue
-  document.getElementById("f-point").innerHTML = x.values[4][1];
-  document.getElementById("f-upcomming").innerHTML = x.values[4][2]
-
-
+// Defult hosue page - for now
+  document.getElementById("house-name").innerHTML = x.values[1][1];
+  document.getElementById("house-blurb").innerHTML = x.values[1][2];
+  document.getElementById("point").innerHTML = x.values[1][3];
+  document.getElementById("point-blurb").innerHTML = x.values[1][4];
+  document.getElementById("upcomming").innerHTML = x.values[1][5];
+  document.getElementById("upcomming-blurb").innerHTML = x.values[1][6];
 }
