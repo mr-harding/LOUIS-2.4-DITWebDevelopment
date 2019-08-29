@@ -27,7 +27,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
 .bg-img{
   max-width: 100%;
   height: auto;
@@ -139,6 +138,21 @@ nav a {
   width: 70%;
   margin: 0 auto;
   padding: 10px;
+}
+
+.leaderboard {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.leaderboard h2 {
+  text-align: left;
+  padding: 5px;
+}
+.leaderboard h1 {
+  text-align: center;
+  padding: 20px;
+
 }
 
 footer {
