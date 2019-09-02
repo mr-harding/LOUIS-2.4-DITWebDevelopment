@@ -10,8 +10,6 @@ Http.onreadystatechange = (e) => {
   x = JSON.parse(Http.responseText);
 }
 
-
-
 function pageSelection(a){
   window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/house-page.html";
 
@@ -26,9 +24,9 @@ function pageSelection(a){
 function redirrectOverall(){
   window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/overall.html";
 
-  document.getElementById("n1House").innerHTML = x.values[7][1];
-  document.getElementById("n2House").innerHTML = x.values[8][1];
-  document.getElementById("n3House").innerHTML = x.values[9][1];
-  document.getElementById("n4House").innerHTML = x.values[10][1];
-  document.getElementById("n5House").innerHTML = x.values[11][1];
+  document.getElementById("n1-house").innerHTML = x.values[7][1];
+  document.getElementById("n2-house").innerHTML = x.values[8][1];
+  document.getElementById("n3-house").innerHTML = x.values[9][1];
+  document.getElementById("n4-house").innerHTML = x.values[10][1];
+  document.getElementById("n5-house").innerHTML = x.values[11][1];
 }

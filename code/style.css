@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background: #efefd0;
+  background: #004982;
 }
 
 .hero{
@@ -48,6 +48,17 @@ nav button {
   padding: 10px;
   color: white;
   background-color: #004982;
+}
+
+.logo {
+  width: 10%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px
+}
+
+.logo img {
+  width: 100px;
 }
 
 .link-tag {
