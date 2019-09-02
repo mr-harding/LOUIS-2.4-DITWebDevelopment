@@ -42,10 +42,12 @@ nav {
   color: white;
 }
 
-nav a {
+nav button {
+  border: none;
   font-size: 26px;
   padding: 10px;
   color: white;
+  background-color: #004982;
 }
 
 .link-tag {

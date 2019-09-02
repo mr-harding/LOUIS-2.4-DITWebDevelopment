@@ -3,16 +3,22 @@ const url='https://sheets.googleapis.com/v4/spreadsheets/1alI8p4CO-AQGIBMDOpSXfE
 Http.open("GET", url);
 Http.send();
 
+
+
 var x;
-
 Http.onreadystatechange = (e) => {
-  x = JSON.parse(Http.responseText);
+  x = JSON.parse(Http.responseText);
 
-// Defult hosue page - for now
+
+}
+
+function pageSelection(a){
+  window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/house-page.html";
+
   document.getElementById("house-name").innerHTML = x.values[1][1];
-  document.getElementById("house-blurb").innerHTML = x.values[1][2];
-  document.getElementById("point").innerHTML = x.values[1][3];
-  document.getElementById("point-blurb").innerHTML = x.values[1][4];
-  document.getElementById("upcomming").innerHTML = x.values[1][5];
-  document.getElementById("upcomming-blurb").innerHTML = x.values[1][6];
+  document.getElementById("house-blurb").innerHTML = x.values[a][2];
+  document.getElementById("point").innerHTML = x.values[a][3];
+  document.getElementById("point-blurb").innerHTML = x.values[a][4];
+  document.getElementById("upcomming").innerHTML = x.values[a][5];
+  document.getElementById("upcomming-blurb").innerHTML = x.values[a][6];
 }
