@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background: #004982;
+  background: #ffffff;
 }
 
 .hero{
@@ -14,7 +14,15 @@ body {
 }
 
 .logo {
-  max-width: 10%;
+  width: 100%;
+  background-color: #0e8265;
+}
+
+.logo-zone {
+  width: 10%;
+  margin: 0 auto;
+  align-items: center;
+
 }
 
 .hero-text {
