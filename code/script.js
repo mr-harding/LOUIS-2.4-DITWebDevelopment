@@ -13,6 +13,7 @@ Http.onreadystatechange = (e) => {
 function pageSelection(a){
   window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/house-page.html";
 
+
   document.getElementById("house-name").innerHTML = x.values[a][1];
   document.getElementById("house-blurb").innerHTML = x.values[a][2];
   document.getElementById("point").innerHTML = x.values[a][3];
