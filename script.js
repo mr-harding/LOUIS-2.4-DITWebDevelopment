@@ -11,7 +11,7 @@ Http.onreadystatechange = (e) => {
 }
 
 function pageSelection(a){
-  window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/house-page.html";
+  window.location.href = "house-page.html";
 
 
   document.getElementById("house-name").innerHTML = x.values[a][1];
@@ -23,7 +23,7 @@ function pageSelection(a){
 }
 
 function redirrectOverall(){
-  window.location.href = "/Users/louisconway/github/houseresults---7DIT/code/overall.html";
+  window.location.href = "overall.html";
 
   document.getElementById("n1-house").innerHTML = x.values[7][1];
   document.getElementById("n2-house").innerHTML = x.values[8][1];
