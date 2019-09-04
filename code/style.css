@@ -65,16 +65,7 @@ nav button:hover {
   background-color: gold;
 }
 
-.logo {
-  width: 10%;
-  height: 100px;
-  margin: 0 auto;
-  padding: 10px
-}
 
-.logo img {
-  width: 100px;
-}
 
 .link-tag {
   text-decoration: inherit;
