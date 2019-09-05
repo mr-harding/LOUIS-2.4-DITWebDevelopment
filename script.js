@@ -11,7 +11,7 @@ Http.onreadystatechange = (e) => {
 }
 
 function pageSelection(a){
-  window.location.href = "house-page.html";
+  var a = a
 
 
   document.getElementById("house-name").innerHTML = x.values[a][1];
