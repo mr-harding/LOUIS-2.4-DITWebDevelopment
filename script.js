@@ -24,6 +24,7 @@ function pageSelection(a){
 }
 
 function redirrectOverall(){
+
   window.location.href = "overall.html";
 
   document.getElementById("n1-house").innerHTML = x.values[7][1];
@@ -33,11 +34,9 @@ function redirrectOverall(){
   document.getElementById("n5-house").innerHTML = x.values[11][1];
 }
 
-console.log(localStorage.getItem("test");
 
 document.getElementById("house-name").innerHTML = localStorage.getItem("test");
-
-document.getElementById("house-burlb").innerHTML = localStorage.getItem("test2");
+document.getElementById("house-blurb").innerHTML = localStorage.getItem("test2");
 document.getElementById("point").innerHTML = localStorage.getItem("test3");
-document.getElementById("point-burlb").innerHTML = localStorage.getItem("test4");
+document.getElementById("point-blurb").innerHTML = localStorage.getItem("test4");
 document.getElementById("upcomming").innerHTML = localStorage.getItem("test5");
