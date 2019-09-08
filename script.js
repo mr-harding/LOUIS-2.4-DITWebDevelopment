@@ -13,13 +13,14 @@ Http.onreadystatechange = (e) => {
 function pageSelection(a){
   var a = a
 
+  location.replace("house-page.html");
 
-  document.getElementById("house-name").innerHTML = x.values[a][1];
-  document.getElementById("house-blurb").innerHTML = x.values[a][2];
-  document.getElementById("point").innerHTML = x.values[a][3];
-  document.getElementById("point-blurb").innerHTML = x.values[a][4];
-  document.getElementById("upcomming").innerHTML = x.values[a][5];
-  document.getElementById("upcomming-blurb").innerHTML = x.values[a][6];
+  localStorage.setItem("test", x.values[a][1]);
+  localStorage.setItem("test2", x.values[a][1]);
+  localStorage.setItem("test3", x.values[a][1]);
+  localStorage.setItem("test4", x.values[a][1]);
+  localStorage.setItem("test5", x.values[a][1]);
+
 }
 
 function redirrectOverall(){
@@ -31,3 +32,12 @@ function redirrectOverall(){
   document.getElementById("n4-house").innerHTML = x.values[10][1];
   document.getElementById("n5-house").innerHTML = x.values[11][1];
 }
+
+console.log(localStorage.getItem("test");
+
+document.getElementById("house-name").innerHTML = localStorage.getItem("test");
+
+document.getElementById("house-burlb").innerHTML = localStorage.getItem("test2");
+document.getElementById("point").innerHTML = localStorage.getItem("test3");
+document.getElementById("point-burlb").innerHTML = localStorage.getItem("test4");
+document.getElementById("upcomming").innerHTML = localStorage.getItem("test5");
