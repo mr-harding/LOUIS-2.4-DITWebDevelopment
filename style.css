@@ -198,3 +198,37 @@ footer {
   color: var(--textPrimary);
 
 }
+
+/* Media */
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+
+
+  }
+
+  nav button {
+    font-size: 10px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+
+
+
+  }
+  .hero-text {
+    font-size: 20px;
+    padding-bottom: 120px;
+  }
+
+}
