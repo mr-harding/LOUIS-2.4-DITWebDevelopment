@@ -203,9 +203,7 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+
   .logo {
     display: none;
   }
@@ -213,22 +211,29 @@ footer {
   nav {
     display: block;
     text-align: center;
-
+    padding: 20px;
 
   }
 
   nav button {
     font-size: 10px;
-    padding: 0px;
+    padding: 5px;
+    font-size: 15px;
     display: block;
     text-align: center;
-
-
-
+    margin: 0 auto;
+}
+  .main-text {
+    font-size: 12px;
   }
   .hero-text {
-    font-size: 20px;
-    padding-bottom: 120px;
+    font-size: 25px;
+    padding-bottom: 170px;
   }
+
+  }
+
+
+
 
 }
