@@ -3,6 +3,7 @@ const url='https://sheets.googleapis.com/v4/spreadsheets/1alI8p4CO-AQGIBMDOpSXfE
 Http.open("GET", url);
 Http.send();
 
+var c = document.getElementsByClassName("pg2-hero");
 
 
 var x;
@@ -20,6 +21,10 @@ function pageSelection(a){
   localStorage.setItem("point", x.values[a][3]);
   localStorage.setItem("point-blurb", x.values[a][4]);
   localStorage.setItem("upcomming", x.values[a][5]);
+
+  if (a==1) {
+    document.c.style.backgroundColor = "black";
+  }
 
 }
 
