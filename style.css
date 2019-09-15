@@ -178,19 +178,29 @@ nav button:hover {
 }
 
 .leaderboard {
-  width: 20%;
+  width: 60%;
   margin: 0 auto;
 }
 
-.leaderboard h2 {
+.leaderboard-placing {
+  width: 100%;
+  padding: 10px;
+  margin: 0, auto;
   text-align: left;
-  padding: 5px;
 }
-.leaderboard h1 {
-  text-align: center;
-  padding: 20px;
 
+.leaderboard-placing h2 {
+  font-size: 333px;
 }
+
+.leaderboard-header {
+  width: 100%;
+  margin: 0, auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 
 footer {
   height: 100px;
@@ -237,6 +247,7 @@ footer {
     padding-bottom: 170px;
   }
 
+
   .pg2-hero-text h1 {
     font-size: 30px;
   }
@@ -252,6 +263,16 @@ footer {
     font-size: 25px; }
 
   }
+
+  .leaderboard-header {
+    font-size: 25px;
+    text-align: center;
+  }
+
+.leaderboard-placing {
+  font-size: 15px;
+
+}
 
   @media only screen and (max-width: 375px) {
 
