@@ -39,14 +39,23 @@ function redirrectOverall(){
 
 }
 
-document.getElementById("n1House").innerHTML = localStorage.getItem("house1");
-document.getElementById("n2House").innerHTML = localStorage.getItem("house2");
-document.getElementById("n3House").innerHTML = localStorage.getItem("house3");
-document.getElementById("n4House").innerHTML = localStorage.getItem("house4");
-document.getElementById("n5House").innerHTML = localStorage.getItem("house5");
 
-document.getElementById("house-name").innerHTML = localStorage.getItem("houseName");
-document.getElementById("house-blurb").innerHTML = localStorage.getItem("blurb");
-document.getElementById("point").innerHTML = localStorage.getItem("point");
-document.getElementById("point-blurb").innerHTML = localStorage.getItem("point-blurb");
-document.getElementById("upcomming").innerHTML = localStorage.getItem("upcomming");
+  document.getElementById("n1House").innerHTML = localStorage.getItem("house1");
+  document.getElementById("n2House").innerHTML = localStorage.getItem("house2");
+  document.getElementById("n3House").innerHTML = localStorage.getItem("house3");
+  document.getElementById("n4House").innerHTML = localStorage.getItem("house4");
+  document.getElementById("n5House").innerHTML = localStorage.getItem("house5");
+
+}
+
+funtion testfunc2() {
+  document.getElementById("house-name").innerHTML = localStorage.getItem("houseName");
+  document.getElementById("house-blurb").innerHTML = localStorage.getItem("blurb");
+  document.getElementById("point").innerHTML = localStorage.getItem("point");
+  document.getElementById("point-blurb").innerHTML = localStorage.getItem("point-blurb");
+  document.getElementById("upcomming").innerHTML = localStorage.getItem("upcomming");
+
+}
+
+
+window.onload=testfunc;
