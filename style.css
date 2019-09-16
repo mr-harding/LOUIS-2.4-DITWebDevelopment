@@ -28,7 +28,6 @@ body {
 }
 
 /* Logo Style */
-
 .logo {
   width: 100%;
   height: 150px;
@@ -50,7 +49,6 @@ body {
 }
 
 /* Navigation Style */
-
 nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -59,8 +57,6 @@ nav {
   text-align: center;
   background-color: var(--mainBackground);
   color: white;
-
-
 }
 
 nav button {
@@ -100,10 +96,6 @@ nav button:hover {
   font-family: Lora;
 }
 
-.bgImg{
-  max-width: 100%;
-  height: auto;
-}
 
 /* Home Page Main Text */
 .mainText {
@@ -116,20 +108,16 @@ nav button:hover {
   font-family: Raleway;,
 }
 
-
-
 .linkTag {
   text-decoration: inherit;
   color: inherit;
   cursor: auto;
-
 }
 
 .hero2 {
   background: var(--header);
   width: 100%;
   height: 200px;
-
 }
 
 .heroText2 {
@@ -145,7 +133,7 @@ nav button:hover {
   padding: 10px;
   font-size: 40px;
 }
-
+/* House Page Header */
 .houseHeader {
   color: var(--textSecounday);
 }
@@ -216,26 +204,27 @@ footer {
 /* Media */
 @media only screen and (max-width: 600px) {
 
+/* Logo */
 .pureLogo {
   display: none;
 }
 
 .logoBare {
-  display: block;
+  display: inline;
 }
-  .logo-zone img {
-    width: 60px;
-  }
 
+.logoZone img {
+  width: 60px;
+}
 .logo {
-  height: 20%;
+  height: 80px;
 }
 
+/* Navigation */
   nav {
     display: block;
     text-align: center;
     padding: 20px;
-
   }
 
   nav button {
@@ -246,82 +235,33 @@ footer {
     text-align: center;
     margin: 0 auto;
 }
+
+/* Home Page Hero Image */
+.hero {
+  height: 300px;
+}
+
+/* Home Page Hero Text */
+.hero {
+  padding-top: 50px;
+}
+
+/* Main home page text*/
   .main-text {
     font-size: 12px;
   }
-  .hero-text {
-    font-size: 25px;
-    padding-bottom: 170px;
-  }
 
-
-  .pg2-hero-text h1 {
-    font-size: 30px;
-  }
-  .pg2-hero-text p {
-    font-size: 15px;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-
-  }
-
+/* House Page Spit Section */
   .split-section h1 {
     font-size: 25px; }
-
   }
 
-  .leaderboard-header {
-    font-size: 25px;
-    text-align: center;
-  }
-
-.leaderboard-placing {
+/* House Page Main Header */
+.heroText p {
   font-size: 15px;
-
 }
 
-  @media only screen and (max-width: 375px) {
-
-    .logo {
-      display: none;
-    }
-
-    nav {
-      display: block;
-      text-align: center;
-      padding: 20px;
-
-    }
-
-    nav button {
-      font-size: 10px;
-      padding: 5px;
-      font-size: 15px;
-      display: block;
-      text-align: center;
-      margin: 0 auto;
-  }
-    .main-text {
-      font-size: 12px;
-    }
-    .hero-text {
-      font-size: 25px;
-      padding-bottom: 225px;
-    }
-
-    .pg2-hero-text h1 {
-      font-size: 30px;
-    }
-    .pg2-hero-text p {
-      font-size: 15px;
-      text-align: center;
-      width: 70%;
-      margin: 0 auto;
-
-    }
-
-    .split-section h1 {
-      font-size: 25px; }
-
-    }
+/* House Page Split Section */
+.splitZone h1 {
+  font-size: 20px;
+}
