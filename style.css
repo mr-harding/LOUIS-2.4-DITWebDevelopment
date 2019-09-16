@@ -29,28 +29,28 @@ body {
   background-color: var(--mainBackground);
 }
 
-.logo-zone {
+.logoZone {
   padding-top: 30px;
   width: 10%;
   margin: 0 auto;
 }
 
-.logo-zone img {
+.logoZone img {
   width: 100px;
 
 }
 
-.hero-text {
+.heroText {
   text-align: center;
   color: white;
-  font-size: 80px;
+  font-size: 6vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.bg-img{
+.bgImg{
   max-width: 100%;
   height: auto;
 }
@@ -80,13 +80,13 @@ nav button:hover {
 
 
 
-.link-tag {
+.linkTag {
   text-decoration: inherit;
   color: inherit;
   cursor: auto;
 }
 
-.main-text {
+.mainText {
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -97,21 +97,21 @@ nav button:hover {
 
 
 
-.link-tag {
+.linkTag {
   text-decoration: inherit;
   color: inherit;
   cursor: auto;
 
 }
 
-.pg2-hero {
+.hero2 {
   background: var(--header);
   width: 100%;
   height: 200px;
 
 }
 
-.pg2-hero-text {
+.heroText2 {
   text-align: center;
   width: 30%;
   margin: 0 auto;
@@ -130,48 +130,48 @@ nav button:hover {
 }
 
 
-.split-section {
+.splitZone {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.split-left {
+.splitLeft {
   background-color: var(--secBackground);
   height: 200px;
   width: auto;
 }
 
-.split-left h1 {
+.splitLeft h1 {
   text-align: center;
   font-size: 30pt;
   padding-top: 20px;
 }
 
-.split-right h1 {
+.splitRight h1 {
   text-align: center;
   font-size: 30pt;
   padding-top: 20px;
 }
 
-.split-left p {
+.splitLeft p {
   padding: 10px;
   text-align: left;
   color: var(--textSecounday);
 }
 
-.split-right p {
+.splitRight p {
   padding: 10px;
   text-align: left;
   color: var(textSecounday);
 }
 
-.split-right {
+.splitRight {
   background-color: var(--secBackground);
   height: 200px;
   width: auto;
 }
 
-.boundry-footer{
+.footerBoundry{
   width: 70%;
   margin: 0 auto;
   padding: 10px;
@@ -182,18 +182,16 @@ nav button:hover {
   margin: 0 auto;
 }
 
-.leaderboard-placing {
+.leaderboardPlacing {
   width: 100%;
   padding: 10px;
   margin: 0, auto;
   text-align: left;
 }
 
-.leaderboard-placing {
-  font-size: 333px;
-}
 
-.leaderboard-header {
+
+.leaderboardHeader {
   width: 100%;
   margin: 0, auto;
   padding-top: 10px;
@@ -210,7 +208,7 @@ footer {
 
 }
 
-.split-section p {
+.splitZone p {
   font-size: 15px;
 
 }
@@ -220,9 +218,17 @@ footer {
 
 @media only screen and (max-width: 600px) {
 
-  .logo {
-    display: none;
+
+  .logo-zone img {
+    width: 60px;
   }
+
+
+
+
+.logo {
+  height: 20%;
+}
 
   nav {
     display: block;
