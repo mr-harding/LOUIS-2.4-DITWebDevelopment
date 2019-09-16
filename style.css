@@ -7,6 +7,8 @@
 
 }
 
+/* Defult Info */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -18,10 +20,7 @@ body {
   background: var(--secBackground);
 }
 
-.hero{
-  width: 100%;
-  margin: 0 auto;
-}
+/* Logo Style */
 
 .logo {
   width: 100%;
@@ -40,20 +39,7 @@ body {
 
 }
 
-.heroText {
-  text-align: center;
-  color: white;
-  font-size: 6vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.bgImg{
-  max-width: 100%;
-  height: auto;
-}
+/* Navigation Style */
 
 nav {
   display: grid;
@@ -78,14 +64,35 @@ nav button:hover {
   background-color: gold;
 }
 
-
-
-.linkTag {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
+/* Hero Elements */
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("img/bg-img.jpeg");
+  background-color: var(mainBackground)l;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+
+.heroText {
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bgImg{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Home Page Main Text */
 .mainText {
   text-align: center;
   width: 60%;
@@ -200,6 +207,12 @@ nav button:hover {
 }
 
 
+.splitZone p {
+  font-size: 15px;
+
+}
+
+/* Footer */
 footer {
   height: 100px;
   width: 100%;
@@ -208,14 +221,7 @@ footer {
 
 }
 
-.splitZone p {
-  font-size: 15px;
-
-}
-
 /* Media */
-
-
 @media only screen and (max-width: 600px) {
 
 
