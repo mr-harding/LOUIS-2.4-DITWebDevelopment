@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway&display=swap');
+
+/*
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Lora', serif; */
+
 :root {
   --textPrimary: #ffffff;
   --textSecounday: #000000;
@@ -38,6 +45,9 @@ body {
   width: 100px;
 
 }
+.logoBare {
+  display: none;
+}
 
 /* Navigation Style */
 
@@ -49,6 +59,8 @@ nav {
   text-align: center;
   background-color: var(--mainBackground);
   color: white;
+
+
 }
 
 nav button {
@@ -57,6 +69,7 @@ nav button {
   padding: 10px;
   color: white;
   background-color: var(--mainBackground);
+  font-family: Lora;
 }
 
 nav button:hover {
@@ -81,10 +94,10 @@ nav button:hover {
   text-align: center;
   color: white;
   font-size: 6vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 7%;
+  font-family: Lora;
 }
 
 .bgImg{
@@ -100,6 +113,7 @@ nav button:hover {
   padding: 40px;
   background-color: var(--secBackground);
   color: var(--textSecounday);
+  font-family: Raleway;,
 }
 
 
@@ -136,10 +150,11 @@ nav button:hover {
   color: var(--textSecounday);
 }
 
-
+/* House Page Split Zone */
 .splitZone {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  font-family: Lora;
 }
 
 .splitLeft {
@@ -154,22 +169,10 @@ nav button:hover {
   padding-top: 20px;
 }
 
-.splitRight h1 {
-  text-align: center;
-  font-size: 30pt;
-  padding-top: 20px;
-}
-
 .splitLeft p {
   padding: 10px;
   text-align: left;
   color: var(--textSecounday);
-}
-
-.splitRight p {
-  padding: 10px;
-  text-align: left;
-  color: var(textSecounday);
 }
 
 .splitRight {
@@ -178,38 +181,21 @@ nav button:hover {
   width: auto;
 }
 
-.footerBoundry{
-  width: 70%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.leaderboard {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.leaderboardPlacing {
-  width: 100%;
-  padding: 10px;
-  margin: 0, auto;
-  text-align: left;
-}
-
-
-
-.leaderboardHeader {
-  width: 100%;
-  margin: 0, auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
+.splitRight h1 {
   text-align: center;
+  font-size: 30pt;
+  padding-top: 20px;
 }
 
+.splitRight p {
+  padding: 10px;
+  text-align: left;
+  color: var(textSecounday);
+}
 
 .splitZone p {
   font-size: 15px;
-
+  font-family: Raleway;
 }
 
 /* Footer */
@@ -218,19 +204,28 @@ footer {
   width: 100%;
   background-color: var(--mainBackground);
   color: var(--textPrimary);
+  font-family: Raleway;
+}
 
+.footerBoundry{
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 /* Media */
 @media only screen and (max-width: 600px) {
 
+.pureLogo {
+  display: none;
+}
 
+.logoBare {
+  display: block;
+}
   .logo-zone img {
     width: 60px;
   }
-
-
-
 
 .logo {
   height: 20%;

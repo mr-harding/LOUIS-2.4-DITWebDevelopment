@@ -13,7 +13,6 @@ Http.onreadystatechange = (e) => {
 
 function pageSelection(a){
   var a = a
-
   location.replace("house-page.html");
 
   localStorage.setItem("houseName", x.values[a][1]);
@@ -27,9 +26,8 @@ function pageSelection(a){
   }
 
 }
-
 document.getElementById("houseName").innerHTML = localStorage.getItem("houseName");
-document.getElementById("houselurb").innerHTML = localStorage.getItem("blurb");
+document.getElementById("houseBlurb").innerHTML = localStorage.getItem("blurb");
 document.getElementById("point").innerHTML = localStorage.getItem("point");
 document.getElementById("pointBlurb").innerHTML = localStorage.getItem("pointBlurb");
 document.getElementById("upcomming").innerHTML = localStorage.getItem("upcomming");
