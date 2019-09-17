@@ -11,7 +11,6 @@ font-family: 'Lora', serif; */
   --mainBackground: #004982;
   --secBackground: #ffffff;
   --header: #ffd522;
-
 }
 
 /* Defult Info */
@@ -29,21 +28,16 @@ body {
 
 /* Logo Style */
 .logo {
-  width: 100%;
-  height: 150px;
   background-color: var(--mainBackground);
 }
 
-.logoZone {
-  padding-top: 30px;
-  width: 10%;
+.pureLogo {
+  display: block;
   margin: 0 auto;
+  width: 110px;
+  padding: 20px;
 }
 
-.logoZone img {
-  width: 100px;
-
-}
 .logoBare {
   display: none;
 }
@@ -147,7 +141,7 @@ nav button:hover {
 /* House Page Split Zone */
 .splitZone {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   font-family: Lora;
 }
 
@@ -194,18 +188,48 @@ nav button:hover {
 
 /* Footer */
 footer {
-  height: 100px;
+  height: auto;
   width: 100%;
   background-color: var(--mainBackground);
   color: var(--textPrimary);
   font-family: Raleway;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.footerBoundry{
-  width: 70%;
-  margin: 0 auto;
-  padding: 10px;
+footer h2{
+    font-family: Lora;
+
 }
+
+footer p {
+  font-family: Raleway;
+
+}
+
+/* Spilt three box footer */
+.address {
+  padding: 15px;
+  width: 90%
+
+}
+.schoolInfo {
+  padding: 15px;
+  width: 90%
+}
+.termDates {
+  padding: 15px;
+  width: 90%;
+}
+
+/* Box Elememts */
+.box {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
 
 /* Media */
 @media only screen and (max-width: 600px) {
@@ -216,14 +240,14 @@ footer {
 }
 
 .logoBare {
-  display: inline;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  padding: 15px;
 }
 
-.logoZone img {
-  width: 60px;
-}
 .logo {
-  height: 80px;
+  height:
 }
 
 /* Navigation */
