@@ -3,9 +3,6 @@ const url='https://sheets.googleapis.com/v4/spreadsheets/1alI8p4CO-AQGIBMDOpSXfE
 Http.open("GET", url);
 Http.send();
 
-var c = document.getElementsByClassName("hero2");
-
-
 var x;
 Http.onreadystatechange = (e) => {
   x = JSON.parse(Http.responseText);
@@ -20,12 +17,8 @@ function pageSelection(a){
   localStorage.setItem("point", x.values[a][3]);
   localStorage.setItem("pointBlurb", x.values[a][4]);
   localStorage.setItem("upcomming", x.values[a][5]);
-
-  if (a==1) {
-    document.c.style.backgroundColor = "black";
-  }
-
 }
+
 document.getElementById("houseName").innerHTML = localStorage.getItem("houseName");
 document.getElementById("houseBlurb").innerHTML = localStorage.getItem("blurb");
 document.getElementById("point").innerHTML = localStorage.getItem("point");
