@@ -91,25 +91,33 @@ nav button:hover {
 }
 
 .hero2 {
-  background: pink;
   width: 100%;
   height: 200px;
+}
+
+.hayColour {
+  background-color: green;
+}
+
+/* House Page Header */
+.heroText2 {
+  padding-top: 40px;
+
 }
 
 .heroText2 h1 {
   text-align: center;
   color: white;
-  font-size: 45px;
+  font-size: 65px;
   width: 60%;
   margin: 0 auto;
-  padding-top: 5%;
   font-family: Lora;
 }
 
 .heroText2 p {
   text-align: center;
   color: white;
-  font-size: 1vw;
+  font-size: 18px;
   width: 60%;
   margin: 0 auto;
   font-family: Lora;
@@ -158,11 +166,38 @@ nav button:hover {
   padding: 20px;
 }
 
-/* Split Zone header & subheading */
-.header3 {
+/* Split Zone header */
+#upcomming {
   text-align: center;
-  font-size: 90px;
+  font-size: 40px;
   font-family: Lora;
+  padding-bottom: 10px;
+}
+
+#point {
+  text-align: center;
+  font-size: 40px;
+  font-family: Lora;
+  padding-bottom: 10px;
+}
+ /* Split Zone subheading */
+#pointBlurb {
+  text-align: left;
+  font-size: 20px;
+  font-family: Raleway;
+}
+#upcommingBlurb {
+  text-align: left;
+  font-size: 20px;
+  font-family: Raleway;
+}
+
+/* Split Zone Box */
+.splitBox {
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 1.5px;
+  border-color: var(--mainBackground)
 }
 
 .subheading {
@@ -194,6 +229,10 @@ footer h2{
 
 }
 
+footer h3 {
+  font-family: Lora;
+}
+
 footer p {
   font-family: Raleway;
 
@@ -221,7 +260,7 @@ footer p {
 }
 
 
-/* Media */
+/* Media Tablet Viewing */
 @media only screen and (max-width: 600px) {
 
 /* Logo */
@@ -256,18 +295,15 @@ footer p {
 /* Home Page Hero Image */
 .hero {
   height: 300px;
+  padding-top: 100px;
 }
 
-/* Home Page Hero Text */
-.hero {
-  padding-top: 50px;
-}
 
 /* House Page header */
 .heroText2 h1 {
   text-align: center;
   color: white;
-  font-size: 9vw;
+  font-size: 35px;
   width: 60%;
   margin: 0 auto;
   padding-top: 4%;
@@ -277,7 +313,7 @@ footer p {
 .heroText2 p {
   text-align: center;
   color: white;
-  font-size: 3.5vw;
+  font-size: 15px;
   width: 60%;
   margin: 0 auto;
   font-family: Lora;
@@ -288,17 +324,58 @@ footer p {
     font-size: 12px;
   }
 
-/* House Page Spit Section */
-  .split-section h1 {
-    font-size: 25px; }
+  /* Split Zone header */
+  #upcomming {
+    text-align: center;
+    font-size: 30px;
+    font-family: Lora;
+    padding-bottom: 10px;
   }
 
-/* House Page Main Header */
-.heroText p {
-  font-size: 15px;
-}
+  #point {
+    text-align: center;
+    font-size: 30px;
+    font-family: Lora;
+    padding-bottom: 10px;
+  }
+   /* Split Zone subheading */
+  #pointBlurb {
+    text-align: left;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  #upcommingBlurb {
+    text-align: left;
+    font-size: 15px;
+    font-family: Raleway;
+  }
 
-/* House Page Split Section */
-.splitZone h1 {
-  font-size: 20px;
-}
+  /* Footer */
+  footer {
+    height: auto;
+    width: 100%;
+    background-color: var(--mainBackground);
+    color: var(--textPrimary);
+    font-family: Raleway;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .footerBox {
+    width: 90%;
+    margin: 0 auto;
+    }
+
+  footer h2{
+      font-size: 20px;
+  }
+
+  footer h3 {
+    font-size: 16px;
+
+  }
+
+  footer p {
+    font-size: 12px;
+
+  }
