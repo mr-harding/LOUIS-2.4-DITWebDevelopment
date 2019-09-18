@@ -20,7 +20,7 @@ function pageSelection(a){
   localStorage.setItem("upcommingBlurb", x.values[a][6]);
 
 
-
+}
 document.getElementById("houseName").innerHTML = localStorage.getItem("houseName");
 document.getElementById("houseBlurb").innerHTML = localStorage.getItem("blurb");
 document.getElementById("point").innerHTML = localStorage.getItem("point");
