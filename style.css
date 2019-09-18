@@ -99,10 +99,10 @@ nav button:hover {
 .heroText2 h1 {
   text-align: center;
   color: white;
-  font-size: 4vw;
+  font-size: 45px;
   width: 60%;
   margin: 0 auto;
-  padding-top: 4%;
+  padding-top: 5%;
   font-family: Lora;
 }
 
@@ -142,48 +142,35 @@ nav button:hover {
 .splitZone {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  font-family: Lora;
 }
 
 .splitLeft {
   background-color: var(--secBackground);
   height: 200px;
   width: auto;
-}
-
-.splitLeft h1 {
-  text-align: center;
-  font-size: 30pt;
-  padding-top: 20px;
-}
-
-.splitLeft p {
-  padding: 10px;
-  text-align: left;
-  color: var(--textSecounday);
+  padding: 20px;
 }
 
 .splitRight {
   background-color: var(--secBackground);
   height: 200px;
   width: auto;
+  padding: 20px;
 }
 
-.splitRight h1 {
+/* Split Zone header & subheading */
+.header3 {
   text-align: center;
-  font-size: 30pt;
-  padding-top: 20px;
+  font-size: 90px;
+  font-family: Lora;
 }
 
-.splitRight p {
-  padding: 10px;
+.subheading {
   text-align: left;
-  color: var(textSecounday);
-}
-
-.splitZone p {
-  font-size: 15px;
+  color: var(--textSecounday);
+  font-size: 20px;
   font-family: Raleway;
+
 }
 
 /* Footer */
@@ -196,6 +183,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
+
+.footerBox {
+  width: 90%;
+  margin: 0 auto;
+  }
 
 footer h2{
     font-family: Lora;
@@ -229,8 +221,6 @@ footer p {
 }
 
 
-
-
 /* Media */
 @media only screen and (max-width: 600px) {
 
@@ -243,12 +233,9 @@ footer p {
   display: block;
   margin: 0 auto;
   width: 50px;
-  padding: 15px;
+  padding-top: 10px;
 }
 
-.logo {
-  height:
-}
 
 /* Navigation */
   nav {
@@ -274,6 +261,26 @@ footer p {
 /* Home Page Hero Text */
 .hero {
   padding-top: 50px;
+}
+
+/* House Page header */
+.heroText2 h1 {
+  text-align: center;
+  color: white;
+  font-size: 9vw;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 4%;
+  font-family: Lora;
+}
+
+.heroText2 p {
+  text-align: center;
+  color: white;
+  font-size: 3.5vw;
+  width: 60%;
+  margin: 0 auto;
+  font-family: Lora;
 }
 
 /* Main home page text*/
