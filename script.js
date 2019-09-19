@@ -21,6 +21,8 @@ function pageSelection(a){
 
 
 }
+
+
 document.getElementById("houseName").innerHTML = localStorage.getItem("houseName");
 document.getElementById("houseBlurb").innerHTML = localStorage.getItem("blurb");
 document.getElementById("point").innerHTML = localStorage.getItem("point");

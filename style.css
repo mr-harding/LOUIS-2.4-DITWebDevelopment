@@ -11,6 +11,7 @@ font-family: 'Lora', serif; */
   --mainBackground: #004982;
   --secBackground: #ffffff;
   --header: #ffd522;
+  --grey: #bebebe;
 }
 
 /* Defult Info */
@@ -20,13 +21,13 @@ font-family: 'Lora', serif; */
   padding: 0px;
 
 }
-
+/* Body */
 body {
   width: 100%;
   background: var(--secBackground);
 }
 
-/* Logo Style */
+/* Logo */
 .logo {
   background-color: var(--mainBackground);
 }
@@ -42,7 +43,7 @@ body {
   display: none;
 }
 
-/* Navigation Style */
+/* Navigation  */
 nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -67,7 +68,7 @@ nav button:hover {
   background-color: gold;
 }
 
-/* Hero Elements */
+/* Home Page Hero Elements */
 .hero {
   width: 100%;
   margin: 0 auto;
@@ -79,7 +80,6 @@ nav button:hover {
   background-size: cover;
 }
 
-
 .heroText {
   text-align: center;
   color: white;
@@ -88,21 +88,6 @@ nav button:hover {
   margin: 0 auto;
   padding-top: 7%;
   font-family: Lora;
-}
-
-.hero2 {
-  width: 100%;
-  height: 200px;
-}
-
-.hayColour {
-  background-color: green;
-}
-
-/* House Page Header */
-.heroText2 {
-  padding-top: 40px;
-
 }
 
 .heroText2 h1 {
@@ -123,7 +108,6 @@ nav button:hover {
   font-family: Lora;
 }
 
-
 /* Home Page Main Text */
 .mainText {
   text-align: center;
@@ -135,15 +119,41 @@ nav button:hover {
   font-family: Raleway;,
 }
 
-.linkTag {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-}
-
 /* House Page Header */
 .houseHeader {
   color: var(--textSecounday);
+
+}
+
+/* House Page Hero */
+.hero2 {
+  width: 100%;
+  height: 200px;
+  background-color: var(--grey);
+}
+.heroText2 {
+  padding-top: 40px;
+}
+
+/* House Colour Classes */
+.hayColour {
+  background-color: green;
+}
+
+.arthurColour {
+  background-color: blue;
+}
+
+.duncanColour {
+  background-color: black;
+}
+
+.foxColour {
+  background-color: red;
+}
+
+.mackenzieColour {
+  background-color: orange;
 }
 
 /* House Page Split Zone */
@@ -182,12 +192,12 @@ nav button:hover {
 }
  /* Split Zone subheading */
 #pointBlurb {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   font-family: Raleway;
 }
 #upcommingBlurb {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
   font-family: Raleway;
 }
@@ -205,7 +215,13 @@ nav button:hover {
   color: var(--textSecounday);
   font-size: 20px;
   font-family: Raleway;
+}
 
+/* Other */
+.linkTag {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
 
 /* Footer */
@@ -218,11 +234,6 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-.footerBox {
-  width: 90%;
-  margin: 0 auto;
-  }
 
 footer h2{
     font-family: Lora;
