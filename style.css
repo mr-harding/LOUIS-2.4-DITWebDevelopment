@@ -122,7 +122,6 @@ nav button:hover {
 /* House Page Header */
 .houseHeader {
   color: var(--textSecounday);
-
 }
 
 /* House Page Hero */
@@ -220,11 +219,49 @@ nav button:hover {
   font-family: Raleway;
 }
 
+/* House Information */
+.informationZone {
+  padding: 30px;
+}
+
+.information {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid;
+  border-radius: 1.5px;
+  border-color: var(--mainBackground)
+
+}
+.fact{
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid;
+  border-radius: 1.5px;
+  border-color: var(--mainBackground);
+
+}
+
+#topFact {
+  margin-bottom: 10px;
+}
+
+.fact h1 {
+  font-family: lora;
+
+}
+
+.fact h2 {
+  font-family: Raleway;
+}
+
 /* Other */
 .linkTag {
   text-decoration: inherit;
   color: inherit;
-  cursor: auto;
+  cursor: hand;
 }
 
 /* Footer */
@@ -353,7 +390,7 @@ footer p {
     font-family: Lora;
     padding-bottom: 10px;
   }
-   /* Split Zone subheading */
+  /* Split Zone subheading */
   #pointBlurb {
     text-align: left;
     font-size: 15px;
@@ -363,6 +400,22 @@ footer p {
     text-align: left;
     font-size: 15px;
     font-family: Raleway;
+  }
+
+  .fact h1 {
+    font-size: 30px;
+  }
+
+  .fact h2 {
+    font-size: 15px;
+  }
+
+  .information {
+    width: 80%;
+  }
+
+  .fact{
+    width: 80%;
   }
 
   /* Footer */

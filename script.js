@@ -19,6 +19,8 @@ function pageSelection(a){
   localStorage.setItem("pointBlurb", x.values[a][4]);
   localStorage.setItem("upcoming", x.values[a][5]);
   localStorage.setItem("upcomingBlurb", x.values[a][6]);
+  localStorage.setItem("dean", x.values[a][7]);
+  localStorage.setItem("funFact", x.values[a][8]);
 
 // background colour selection based on house selected
   if (a == 1) {
@@ -42,6 +44,8 @@ document.getElementById("point").innerHTML = localStorage.getItem("point");
 document.getElementById("pointBlurb").innerHTML = localStorage.getItem("pointBlurb");
 document.getElementById("upcoming").innerHTML = localStorage.getItem("upcoming");
 document.getElementById("upcomingBlurb").innerHTML = localStorage.getItem("upcomingBlurb");
+document.getElementById("dean").innerHTML = localStorage.getItem("dean");
+document.getElementById("funFact").innerHTML = localStorage.getItem("funFact");
 
 // House background colour
 document.getElementById("changingColour").style.background = localStorage.getItem("houseColour")
